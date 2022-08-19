@@ -26,16 +26,6 @@ p {
   margin: 0;
   padding: 0;
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-/* *,
-*::after,
-*::before {
-  box-sizing: inherit;
-} */
 
 /* body */
 body {
@@ -62,7 +52,7 @@ body {
   padding-top: 24px;
   padding-bottom: 9px;
   margin-bottom: 21px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   border-bottom: 4px solid #d9d9d9;
 }
 
@@ -245,6 +235,9 @@ body {
 }
 .item-team {
   background-color: var(--main-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-caption {
   margin-top: 30px;
@@ -294,17 +287,14 @@ body {
 /* portfolio */
 .list-button {
   display: flex;
+  justify-content: center;
   margin-top: 94px;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   gap: 8px;
 }
 
-.list-button .item {
-  /* display: block; */
-  align-items: center;
-}
 .works-button {
   color: var(--secondary-color-text);
   font-family: var(--main-font-family);
@@ -327,9 +317,7 @@ body {
   gap: 30px;
   padding-bottom: 94px;
 }
-.item-example {
-  border-radius: 4px;
-}
+
 .example-title {
   color: var(--secondary-color-text);
   font-weight: 700;
@@ -340,4 +328,7 @@ body {
 .example-subtitle {
   font-size: 16px;
   line-height: 1.87;
+}
+.name-text {
+  border: 1px solid #eeeeee;
 }
