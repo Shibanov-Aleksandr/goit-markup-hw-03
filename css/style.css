@@ -15,7 +15,27 @@ a {
 }
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* *,
+*::after,
+*::before {
+  box-sizing: inherit;
+} */
 
 /* body */
 body {
@@ -26,16 +46,53 @@ body {
   letter-spacing: var(--main-ls);
 }
 /* header */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid red; */
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 9px;
+  margin-bottom: 21px;
+  outline: 2px solid red;
+  border-bottom: 4px solid #d9d9d9;
+}
+
 .link-webstudio-header {
+  display: block;
+  width: 145px;
+  margin-right: 93px;
   color: #000000;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 25px;
   line-height: 1.2;
+  /* outline: 2px solid red; */
 }
 .logo-web {
   color: var(--accent-color);
 }
+.list-nav {
+  display: flex;
+  /* outline: 2px solid red; */
+}
+
+.list-nav .item {
+  margin-right: 50px;
+}
+
+.list-nav .item:last-child {
+  margin-right: 0px;
+}
+
 .link-nav {
   color: var(--secondary-color-text);
   font-weight: 500;
@@ -43,10 +100,23 @@ body {
   line-height: 1.15;
   letter-spacing: 0.02em;
 }
+
 .link-nav:hover,
 .link-nav:focus {
   color: var(--accent-color);
 }
+
+.list-contact {
+  display: flex;
+
+  margin-left: auto;
+  /* outline: 2px solid red; */
+}
+
+.list-contact .item:not(last-child) {
+  margin-right: 50px;
+}
+
 .link-contacts-header:hover,
 .link-contacts-header:focus {
   color: var(--accent-color);
@@ -59,21 +129,29 @@ body {
 .webstudio-header .list-nav .active {
   color: var(--accent-color);
 }
+
 /* main */
 /* hero */
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 .hero-title {
+  padding-top: 200px;
+  margin-bottom: 30px;
+
   color: var(--main-color-darck-fon);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
-  text-align: center;
+  align-items: center;
   text-transform: uppercase;
 }
 .hero-button {
+  min-width: 200px;
+  padding: 10px 32px;
+  margin-bottom: 200px;
   background-color: var(--accent-color-bg);
   color: var(--main-color-darck-fon);
   font-family: var(--main-font-family);
@@ -112,10 +190,36 @@ body {
   line-height: 1.15;
   text-transform: uppercase;
 }
+
+.privileges-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  gap: 30px;
+}
+
+.privileges-list .item {
+  width: 270px;
+  /* justify-content: center; */
+}
+
 .privileges-subtitle {
   line-height: 1.7;
 }
 /* we-do */
+.we-do-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: 370px;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
+.we-do-title {
+  margin-bottom: 50px;
+}
 .we-do-title,
 .team-title {
   color: var(--secondary-color-text);
@@ -129,10 +233,22 @@ body {
 .team {
   background-color: #f5f4fa;
 }
+.team-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  width: 270px;
+  gap: 30px;
+  padding-bottom: 60px;
+}
 .item-team {
   background-color: var(--main-bg-color);
 }
 .team-caption {
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: var(--secondary-color-text);
   font-weight: 500;
   font-size: 16px;
@@ -140,6 +256,7 @@ body {
   text-align: center;
 }
 .team-subtitle {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -152,6 +269,10 @@ body {
   font-size: 14px;
 }
 .link-websudio-footer {
+  display: block;
+  gap: 9px;
+  padding-top: 60px;
+  margin-bottom: 20px;
   color: var(--main-color-darck-fon);
   font-family: var(--secondary-font-family);
   font-weight: 700;
@@ -159,6 +280,7 @@ body {
   line-height: 1.2;
 }
 .address-webstudio {
+  padding-bottom: 60px;
   color: var(--main-color-darck-fon);
   font-style: normal;
 }
@@ -170,6 +292,19 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 /* portfolio */
+.list-button {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 8px;
+}
+
+.list-button .item {
+  /* display: block; */
+  align-items: center;
+}
 .works-button {
   color: var(--secondary-color-text);
   font-family: var(--main-font-family);
@@ -186,7 +321,12 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-
+.list-example {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 94px;
+}
 .item-example {
   border-radius: 4px;
 }
