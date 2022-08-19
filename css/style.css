@@ -26,6 +26,9 @@ p {
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+}
 
 /* body */
 body {
@@ -288,14 +291,18 @@ body {
 .list-button {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
   /* margin-left: auto;
   margin-right: auto; */
   gap: 8px;
 }
 
 .works-button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
   color: var(--secondary-color-text);
   font-family: var(--main-font-family);
   font-weight: 500;
