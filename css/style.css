@@ -179,6 +179,7 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   border: 0px;
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -202,6 +203,7 @@ body {
   margin: -1px;
 }
 .privileges-title {
+  margin-bottom: 10px;
   color: var(--secondary-color-text);
   font-weight: 700;
   font-size: var(--main-fs);
@@ -233,7 +235,7 @@ body {
   /* padding-bottom: 94px; */
 }
 .we-do-list > .item {
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
   margin-right: var(--card-set-gap);
 }
 .we-do-title,
@@ -255,8 +257,6 @@ body {
 }
 .team-list {
   display: flex;
-
-  padding-bottom: 60px;
 }
 .item-team {
   flex-basis: calc((100% - 90px) / 4);
@@ -299,7 +299,7 @@ body {
 .link-websudio-footer {
   display: inline-block;
   gap: 9px;
-  padding-top: 60px;
+
   margin-bottom: 20px;
   color: var(--main-color-darck-fon);
   font-family: var(--secondary-font-family);
